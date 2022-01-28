@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///mybatis?serverTimezone=UTC
+    username: root
+    password: 1640048467
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis.plus:
+  global-config:
+    db-config:
+      table-prefix: tbl_
+#      前缀   加了之后所有表都加这个前缀
+
+
+# Druid  (推荐)
+
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql:///mybatis?serverTimezone=UTC
+#      username: root
+#      password: 1640048467
+#      type: com.alibaba.druid.pool.DruidDataSource

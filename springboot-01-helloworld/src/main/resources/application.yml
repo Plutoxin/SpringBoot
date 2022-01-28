@@ -1,0 +1,36 @@
+server:
+  port: 80
+
+
+
+enterpri:
+  name: chengguo
+  age: 25
+  subject:
+    - Java
+    - 大数据
+    - 前端
+
+# 创建一个类封装下面的数据
+# 由spring帮我们加载数据到对象中, 一定要告诉spring加载这段信息，
+#  使用时直接从spring中获取
+
+datasource:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost/springboot_db
+  username: root
+  password: 1640048467
+
+
+#  设置文件传输大小值
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  web:
+    resources:
+      add-mappings: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
